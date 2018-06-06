@@ -20,6 +20,7 @@ Also, You have to use [POST	/posts] api to create a User Profile Form, following
 - Mobile
 
 Once the Form is successfully posted, You have to display the response data as:
+
 ![alt text] (https://lh3.googleusercontent.com/-fbnUu9Uac7c/WxeF9oSj_eI/AAAAAAAAAJI/aUXvZt0o8CwIqSyIjQ3J1SEQGaxEBXKzwCK8BGAs/s512/user.png)
 
 All The Best!
