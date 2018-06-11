@@ -11,21 +11,81 @@ quality as well as your approach to solve the problem.
 If you believe the test is unclear in anyway or you have any questions please feel free to ask.
 
 # Your Task
+This API handles a list of Jobs. allows you to add | delete the job
 
-You are given a API that is a messaging interface. Your Task is to improve, optimize / rewrite (if necessary).  it in best possible way with proper tests.
+* As a User, I want to publish a Job.
+    * A Job Title and description can't be empty.
+    * A Job Description can't contain more than 500 characters.
+    * A Job Poster name can't be empty.
 
-- How can database model be improved (What Steps you would take to implement this structure).
-- How can we improve response time in our current system.
-- What will be your caching strategy?
-- Unit Tests.
+* As a User, I want to view the list of published Jobs.
+    * The list must be sorted by publication date in descending order.
+     
+To pass this test, we expect software that also fulfills the following list of strategic user stories
 
-You can find the Test API at https://bitbucket.org/VijayPratap123/chat/src/master/
-You can also find the documentation attached in your application email.
+* As a User, I want to add links to the Job Description text without affecting the 500 character limit.
+    * A link is any set of non-whitespace consecutive characters starting with http:// or https:// and finishing with a space.
+        * For example, the tweet `Hey http://foogle.co` is 4 characters long, instead of 20.
+        
+* As a User, I want to add more filters on the basis of which published jobs can be listed.
+   * A way sort list by publication date in ascending order.
+   * A way to sort list on the basis of a specific word in title such as `for query 'Java'`, it should list all published jobs with 'Java' as a title in them.
 
+* As a User, I want to discard Job Posts.
+    * Jobs shall be discarded globally, we don't need user-based discarding.
+    * Discarded jobs will not be shown in the published jobs list.
+    
+* As a User, I want to view a list of discarded Jobs.
+    * The list must be sorted by the date it was discarded on in descending order.
+    
 
+## Technical Requirements
 
+* The application must fulfill all of the acceptance criteria.
+* Feel free to refactor old code when adding new user jobs.
+* Application test coverage must not decrease.
+* Do not use any framework or library not already in the codebase.
+* API contracts can't be changed or modified any way.
 
+### APIs
 
+For the two new endpoints, you must accept this API:
+
+* As a User, I want to discard tweets:
+    * POST /discarded
+    * Content-Type: application/json
+    * `{ "job": "%JOB_ID%" }` 
+    
+* As a User, I want to view a list of discarded tweets:
+    * GET /discarded
+    * The response body format should be identical to the published tweets GET /tweet endpoint.
+        * New fields are not allowed.
+
+All other endpoint contracts must not be changed.
+
+## Usage
+
+From the application folder, run
+```sh
+./gradlew bootRun
+```
+
+To get all published jobs
+```sh
+curl http://localhost:8080/jobs
+```
+
+To publish a new tweet
+```sh
+curl -XPOST -d '{ "title": "Prospect", "description": "Breaking the law", "publisher": "" }' -H 'Content-Type: application/json' http://localhost:8080/tweet
+```
+
+## Test
+
+From the application folder, run
+```sh
+./gradlew test
+```
 
 
 
