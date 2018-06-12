@@ -11,6 +11,8 @@ quality as well as your approach to solve the problem.
 If you believe the test is unclear in anyway or you have any questions please feel free to ask.
 
 # Your Task
+Sample API: 
+
 This API handles a list of Jobs. allows you to add | delete the job
 
 * As a User, I want to publish a Job.
@@ -37,6 +39,8 @@ To pass this test, we expect software that also fulfills the following list of s
     
 * As a User, I want to view a list of discarded Jobs.
     * The list must be sorted by the date it was discarded on in descending order.
+    
+* As a Developer, You'd want to implement a caching strategy as well.
     
 
 ## Technical Requirements
@@ -75,7 +79,7 @@ To get all published jobs
 curl http://localhost:8080/jobs
 ```
 
-To publish a new tweet
+To publish a new job
 ```sh
 curl -XPOST -d '{ "title": "Prospect", "description": "Breaking the law", "publisher": "" }' -H 'Content-Type: application/json' http://localhost:8080/tweet
 ```
