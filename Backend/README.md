@@ -55,14 +55,14 @@ To pass this test, we expect software that also fulfills the following list of s
 
 For the two new endpoints, you must accept this API:
 
-* As a User, I want to discard tweets:
+* As a User, I want to discard Jobs:
     * POST /discarded
     * Content-Type: application/json
     * `{ "job": "%JOB_ID%" }` 
     
-* As a User, I want to view a list of discarded tweets:
+* As a User, I want to view a list of discarded Jobs:
     * GET /discarded
-    * The response body format should be identical to the published tweets GET /tweet endpoint.
+    * The response body format should be identical to the published jobs GET /tweet endpoint.
         * New fields are not allowed.
 
 All other endpoint contracts must not be changed.
