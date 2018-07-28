@@ -8,6 +8,7 @@ Your code should be written in a way that shows you have a good understanding of
 and development best practices. You will be evaluated on the basis of your code
 quality as well as your approach to solve the problem.
 
+You can Use Online Service Such as CodeAnywhere to Develop online
 To Deploy the server you'll use Heroku and for Database you'll use mLabs
 
 If you believe the test is unclear in anyway or you have any questions please feel free to ask.
