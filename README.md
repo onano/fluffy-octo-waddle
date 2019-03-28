@@ -1,7 +1,7 @@
-# Front End Developer Hiring Test For Maven Workforce
-This test is used as part of the recruitment process for developers looking to join Maven Workforce. We would expect this part normally to take a hour to finish
+# Front End Developer Hiring Test For Vasitum
+This test is used as part of the recruitment process for developers looking to join Vasitum. We would expect this part normally to take a hour to finish.
 
-Your code should be written in a way that shows you have a good understanding of software design patterns and development best practices. You are free to pick any language (TypeScript/JavaScript) You can Use Online Services Such as `Codepen` Or `Stackblitz` Alternatively You can also deploy your application on `Heroku`.
+Your code should be written in a way that shows you have a good understanding of software design patterns and development best practices. You are free to pick any language (TypeScript/JavaScript) You can use online Services Such as [codepen](https://codepen.io/) Or [Stackblitz](https://stackblitz.com/) Alternatively You can also deploy your application on `Heroku`.
 
 If you believe the test is unclear in anyway or you have any questions please feel free to ask.
 
