@@ -7,13 +7,13 @@ Your code should be written in a way that shows you have a good understanding of
 If you believe the test is unclear in anyway or you have any questions please feel free to ask.
 
 ## Task | Requirments
-You have to use JSON Placeholder API [Link](https://jsonplaceholder.typicode.com/). 
+You have to use JSON Placeholder API [Link](https://jsonplaceholder.typicode.com/posts). 
 
 Use [GET] '/posts' API and Create following interface.
 
 ![alt text](https://raw.githubusercontent.com/Alexander-Prime/front-end-developer-test/master/readme-assets/screenshots/home.png "Mockup")
 
-Also, You have to use [POST	/posts] api to create a User Profile Form, following fields with appropriate validation.
+Also, You have to use [POST	https://jsonplaceholder.typicode.com/posts] api to create a User Profile Form, following fields with appropriate validation.
 - Username
 - Password
 - Email
