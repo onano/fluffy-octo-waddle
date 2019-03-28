@@ -1,4 +1,4 @@
-# React Developer Hiring Test For Maven Workforce
+# Front End Developer Hiring Test For Maven Workforce
 This test is used as part of the recruitment process for developers looking to join Maven Workforce. We would expect this part normally to take a hour to finish
 
 Your code should be written in a way that shows you have a good understanding of software design patterns and development best practices. You are free to pick any language (TypeScript/JavaScript) You can Use Online Services Such as `Codepen` Or `Stackblitz` Alternatively You can also deploy your application on `Heroku`.
